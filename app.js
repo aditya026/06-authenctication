@@ -2,7 +2,8 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req,res)=>{
-    res.send('hey m hu don')
+    res.cookie('name', 'aditya')
+    res.send('done')
 })
 
 app.listen(3000, ()=>{
